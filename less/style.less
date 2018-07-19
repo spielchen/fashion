@@ -58,6 +58,9 @@ html{
 a:hover{
 	text-decoration: none;
 }
+
+/*-----------------HEADER STYLES---------------*/
+
 .header{
 	padding-top: 2.5rem;
 	background: url('../img/header_bg.png') top center no-repeat;
@@ -150,6 +153,7 @@ a:hover{
 	}
 }
 
+/*-----------------SALE BLOCK STYLES---------------*/
 
 .sale{
 	margin-top: 8rem;
@@ -203,8 +207,15 @@ a:hover{
 	&_slider{
 		margin-top: 7.5rem;
 		position: relative;
+		&__item{
+			max-height: 51.5rem;
+			width: auto;
+			position: relative;
+		}
 	}
 }
+
+/*-----------------NEW GOODS BLOCK STYLES---------------*/
 
 .new_goods{
 	margin-top: 9.3rem;
@@ -237,6 +248,9 @@ a:hover{
 					text-transform: uppercase;
 					font-size: 1.4rem;
 					color:rgb(114, 114, 114);
+					&:hover{
+						text-decoration: underline;
+					}
 				}
 			}
 		}
@@ -287,6 +301,28 @@ a:hover{
 		}
 	}
 }
+#new_goods__item1{
+	background: url('../img/goods/item1.png') center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#new_goods__item2{
+	background: url('../img/goods/item2.png') center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#new_goods__item3{
+	background: url('../img/goods/item3.png') center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+#new_goods__item4{
+	background: url('../img/goods/item4.png') center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/*-----------------EXLUSIVE BLOCK STYLES---------------*/
 
 .exlusive{
 	&_woman{
@@ -342,7 +378,7 @@ a:hover{
 				font-size: 2.2rem;
 				font-weight: 700;
 				line-height: 3.6rem;
-				text-align:right;
+				text-align: right;
 				text-transform: uppercase;
 				letter-spacing: 6px;
 			}
@@ -364,110 +400,7 @@ a:hover{
 	}
 }
 
-
-
-
-
-#new_goods__item1{
-	background: url('../img/goods/item1.png') center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-#new_goods__item2{
-	background: url('../img/goods/item2.png') center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-#new_goods__item3{
-	background: url('../img/goods/item3.png') center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-#new_goods__item4{
-	background: url('../img/goods/item4.png') center no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
-
-
-
-.buy{
-	color:#000;
-	font-size: 2.4rem;
-	padding: 2.2rem 10rem 2.2rem 10rem;
-	background-color: #fff;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	&:hover{
-		color: rgb(167, 167, 167);
-	}
-	&-o{
-		color:#fff;
-		background-color: #000;
-	}
-	&-ex{
-		font-size: 1.6rem;
-	}
-}
-
-.arrow{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	width: 75px;
-	height: 75px;
-	background-color: #fff;
-	&_left{
-		transform: translate(5%, -105%);
-	}
-	&_right{
-		transform: translate(110%, -105%);
-		img{
-			transform: rotate(180deg)
-		}
-	}
-}
-#arrow_left1{
-	img{
-		transform: rotate(180deg)
-	}
-}
-
-
-.edd_to{
-	background-color: #000;
-	color:#fff;
-	text-transform: uppercase;
-	font-size: 1.4rem;
-	padding-top: 1.6rem ;
-	padding-bottom: 1.6rem;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	letter-spacing: 2px;
-	opacity: 0;
-	a{
-		color:#fff;
-	}
-}
-
-.line{
-	width: 20rem;
-	height: 1px;
-	background-color: #fff;
-	position: absolute;
-	top:20%;
-	left:75%;
-}
-
-
+/*-----------------PARTNER BLOCK STYLES---------------*/
 
 .partner{
 	position: relative;
@@ -503,6 +436,7 @@ a:hover{
 	}
 }
 
+/*-----------------NEWS BLOCK STYLES---------------*/
 
 .news{
 	padding-bottom: 8rem;
@@ -558,46 +492,49 @@ a:hover{
 	}
 }
 
+/*-----------------PLUS BLOCK STYLES---------------*/
+
 .plus{
-	background-color: #f2f2f2;
-	&_blok{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	&_item{
-		text-align: center;
-		display: inline-block;
-		margin-right: 5.2rem;
-	}
-	&_titel{
-		margin-top: 3.3rem;
-		color:#040404;
-		text-transform: uppercase;
-		font-size: 1.6rem;
-		line-height: 2.4rem;
-		font-weight: 700;
-		margin-bottom: 0;
-	}
-	&_text{
-		font-size: 1.4rem;
-		color:#444444;
-		margin-top: 0;
-		margin-bottom: 3.3rem;
-	}
+  background-color: #f2f2f2;
+  &_blok{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_item{
+    text-align: center;
+    display: inline-block;
+    margin-right: 5.2rem;
+  }
+  &_titel{
+    margin-top: 3.3rem;
+    color:#040404;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  &_text{
+    font-size: 1.4rem;
+    color:#444444;
+    margin-top: 0;
+    margin-bottom: 3.3rem;
+  }
 
 }
 .line_vertikal{
-	display: inline-block;
-	height: 7.1rem;
-	width: 2px;
-	background-color: #fff;
+  display: inline-block;
+  height: 7.1rem;
+  width: 2px;
+  background-color: #fff;
 }
 
+/*-----------------FOOTER BLOCK STYLES---------------*/
 
 .footer{
 	padding-top: 4.7rem;
@@ -613,7 +550,6 @@ a:hover{
 	}
 	&_links{
 		&__title{
-			width: 70%;
 			display: inline-block;
 			p{
 				text-transform: uppercase;
@@ -640,29 +576,89 @@ a:hover{
 	}
 }
 
+/*-----------------CONTACTS STYLES---------------*/
+
 .contacts{
-	position: absolute;
-	top: 0.5rem;
-	right: 0;
-	a{
-		text-decoration: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 8%;
+  a{
+    text-decoration: none;
+  }
+  &_blok{
+      width: 30px;
+      height: 30px;
+      border:1px solid #fff;
+      border-radius: 50%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    i{
+      color:#fff;
+      font-size: 2rem;
+    }
+  }
+}
+
+/*-----------------BUTTONS AND ARROWS STYLES---------------*/
+
+.buy{
+	color:#000;
+	font-size: 2.4rem;
+	padding: 2.2rem 10rem 2.2rem 10rem;
+	background-color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	&:hover{
+		color: rgb(167, 167, 167);
 	}
-	&_blok{
-			width: 30px;
-			height: 30px;
-			border:1px solid #fff;
-			border-radius: 50%;
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin-bottom: 0.5rem;
-		i{
-			color:#fff;
-			font-size: 2rem;
-		}
+	&-o{
+		color:#fff;
+		background-color: #000;
+	}
+	&-ex{
+		font-size: 1.6rem;
 	}
 }
+
+#arrow_left1{
+	img{
+		transform: rotate(180deg)
+	}
+}
+
+
+.edd_to{
+	background-color: #000;
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	padding-top: 1.6rem ;
+	padding-bottom: 1.6rem;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 2px;
+	opacity: 0;
+	a{
+		color:#fff;
+	}
+}
+
+.line{
+	width: 20rem;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	top:20%;
+	left:75%;
+}
+
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,11 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
+    <!-- Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
     <!--<script src="http://megatimer.ru/s/ea92964fef6530d196c7f932f6b46e62.js"></script>-->
 
@@ -23,6 +26,7 @@
     <![endif]-->
   </head>
   <body>
+  <!-- HEADER -->
     <div class="header">
       <div class="container">
         <div class="row header-main">
@@ -62,6 +66,8 @@
         <!-- /.row -->
       </div>
     </div>
+
+    <!-- SALE BLOCK -->
     <div class="container">
       <div class="sale">
         <div class="row">
@@ -105,16 +111,22 @@
         <div class="col-md-8 sale_slider">
           <div class="sale_slider__item">
           <img src="img/sale/slider.png" alt="">
-            <a class="arrow arrow_left" href="">
-              <img src="img/sale/arrow.png" alt="">
-            </a>
-            <a class="arrow arrow_right" href="">
-              <img src="img/sale/arrow.png" alt="">
-            </a>
+          </div>
+          <div class="sale_slider__item">
+            <img src="img/sale/slider_1.jpeg" alt="">
+          </div>
+           <div class="sale_slider__item">
+            <img src="img/sale/slider_2.jpg" alt="">
+          </div>
+          <div class="sale_slider__item">
+            <img src="img/sale/slider_3.jpg" alt="">
           </div>
         </div>
       </div>
       <!-- /.sale -->
+    
+
+      <!-- NEW GOODS BLOCK -->
       <div class="new_goods">
         <div class="row new_goods__header">
           <div class="col-md-5 new_goods__text">
@@ -186,6 +198,8 @@
       </div>
     </div>
     
+
+    <!-- EXLUSIVE BLOCK -->
     <div class="container exlusive">
       <div class="row">
         <div class="col-md-5 
@@ -235,6 +249,7 @@
   </div>
 </div>
 
+<!-- NEWS BLOCK -->
 <div class="container">
   <h2 class="news_head">Новости</h2>
   <div class="row news">
@@ -283,6 +298,8 @@
   </div>
 </div>
 
+
+<!-- PLUS BLOCK -->
 <div class="plus">
   <div class="container">
     <div class="row">
@@ -317,6 +334,8 @@
   </div>
 </div>
 
+
+<!-- FOOTER BLOCK -->
 <div class="footer">
   <div class="container">
     <div class="row">
@@ -379,8 +398,21 @@
     </div>
   </div>
 </div>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script  src="js/slick.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $('.sale_slider').slick({
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    arrows: true
+  });
+});
+</script>
   </body>
 </html>
