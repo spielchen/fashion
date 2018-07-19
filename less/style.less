@@ -59,7 +59,7 @@ a:hover{
 	text-decoration: none;
 }
 .header{
-	padding-top: 3.4rem;
+	padding-top: 2.5rem;
 	background: url('../img/header_bg.png') top center no-repeat;
 	-webkit-background-size: 118%;
 	background-size: 118%;
@@ -97,7 +97,10 @@ a:hover{
 					color: rgb(68, 68, 68);
 					font-size: 1.4rem;
 					text-transform: uppercase;
-					font-weight: 600;			
+					font-weight: 600;	
+					&:hover{
+						text-decoration: underline;
+					}
 				}
 			}
 		}
@@ -116,7 +119,6 @@ a:hover{
 			color:rgb(68, 68, 68);
 			font-size: 1.6rem;
 			text-transform: uppercase;
-			text-decoration: underline;
 			&:hover{
 				color:rgb(68, 68, 68);
 				text-decoration: underline;
@@ -129,6 +131,7 @@ a:hover{
 			padding-left: 6rem;
 			&:hover{
 				color:rgb(68, 68, 68);
+				text-decoration: underline;
 			}
 		}
 	}
@@ -396,6 +399,9 @@ a:hover{
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 3px;
+	&:hover{
+		color: rgb(167, 167, 167);
+	}
 	&-o{
 		color:#fff;
 		background-color: #000;
@@ -607,6 +613,8 @@ a:hover{
 	}
 	&_links{
 		&__title{
+			width: 70%;
+			display: inline-block;
 			p{
 				text-transform: uppercase;
 				color: #fff;
@@ -633,8 +641,12 @@ a:hover{
 }
 
 .contacts{
-	display: inline-block;
-	align-self: 
+	position: absolute;
+	top: 0.5rem;
+	right: 0;
+	a{
+		text-decoration: none;
+	}
 	&_blok{
 			width: 30px;
 			height: 30px;
@@ -647,8 +659,10 @@ a:hover{
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			margin-bottom: 0.5rem;
 		i{
 			color:#fff;
+			font-size: 2rem;
 		}
 	}
 }

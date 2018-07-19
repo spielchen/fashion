@@ -39,7 +39,7 @@ a:hover {
   text-decoration: none;
 }
 .header {
-  padding-top: 3.4rem;
+  padding-top: 2.5rem;
   background: url('../img/header_bg.png') top center no-repeat;
   -webkit-background-size: 118%;
   background-size: 118%;
@@ -81,6 +81,9 @@ a:hover {
   text-transform: uppercase;
   font-weight: 600;
 }
+.header_menu ul li a:hover {
+  text-decoration: underline;
+}
 .header_pay {
   display: -webkit-flex;
   display: -moz-flex;
@@ -96,7 +99,6 @@ a:hover {
   color: #444444;
   font-size: 1.6rem;
   text-transform: uppercase;
-  text-decoration: underline;
 }
 .header_pay__login:hover {
   color: #444444;
@@ -110,6 +112,7 @@ a:hover {
 }
 .header_pay__lang:hover {
   color: #444444;
+  text-decoration: underline;
 }
 .header_text {
   text-align: center;
@@ -356,6 +359,9 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+.buy:hover {
+  color: #a7a7a7;
+}
 .buy-o {
   color: #fff;
   background-color: #000;
@@ -544,6 +550,10 @@ a:hover {
   font-size: 1.2rem;
   line-height: 2.4rem;
 }
+.footer_links__title {
+  width: 70%;
+  display: inline-block;
+}
 .footer_links__title p {
   text-transform: uppercase;
   color: #fff;
@@ -566,8 +576,12 @@ a:hover {
   line-height: 2.8rem;
 }
 .contacts {
-  display: inline-block;
+  position: absolute;
+  top: 0.5rem;
   right: 0;
+}
+.contacts a {
+  text-decoration: none;
 }
 .contacts_blok {
   width: 30px;
@@ -581,7 +595,9 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 .contacts_blok i {
   color: #fff;
+  font-size: 2rem;
 }
